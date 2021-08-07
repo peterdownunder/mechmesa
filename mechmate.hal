@@ -257,6 +257,7 @@ net z-enable     => hm2_7i76e.0.stepgen.01.enable
 
 #  ---HALUI signals---
 
+
 net axis-select-x  halui.axis.x.select
 net jog-x-pos      halui.axis.x.plus
 net jog-x-neg      halui.axis.x.minus
