@@ -69,4 +69,7 @@ tool_in_spindle = 3
 probeheight = 1.0
 searchvel = 75.0
 probevel = 10.0
+offset_axis_y = 0.0
+offset_axis_x = 0.0
+offset_axis_z = 0.0
 

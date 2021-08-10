@@ -13,3 +13,14 @@ setp vfd.enable 1
 
 net tooloffset-x gmoccapy.tooloffset-x <= motion.tooloffset.x
 net tooloffset-z gmoccapy.tooloffset-z <= motion.tooloffset.z
+
+
+#net xbox-left gmoccapy.jog.axis.jog-x-minus
+#net xbox-right gmoccapy.jog.axis.jog-x-plus
+#net xbox-up gmoccapy.jog.axis.jog-y-plus
+#net xbox-down gmoccapy.jog.axis.jog-y-minus
+#net xbox-feed-increase gmoccapy.spc_feed.increase
+#net xbox-feed-decrease gmoccapy.spc_feed.decrease
+#net xbox-feed-reset gmoccapy.feed.reset-feed-override
+
+net xbox-silver-btn halui.estop.activate
