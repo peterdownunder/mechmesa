@@ -1,7 +1,7 @@
 ; Testfile go to position
 ; will jog the machine to a position to give
 
-O<setXY> sub
+O<set_x_y> sub
 
 G17
 G21
@@ -17,8 +17,8 @@ G90
 ;#3 = <Z-Pos>
 
 (DBG, Will now move machine to X = #1 , Y = #2 , Z = #3)
-G0 X #1 Y #2 Z #3
+G92 X0 Y0
 
-O<setXY> endsub
+O<set_x_y> endsub
 
 M2

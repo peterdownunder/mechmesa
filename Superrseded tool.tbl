@@ -1,0 +1,9 @@
+T1 P1 D6.000000 Z-236.388650 ;6mm drill 
+T2 P2 D10.000000 Z-70.270400 ;10mm single flute endmill 
+T3 P3 D22.000000 Z-112.961300 ;#7 tap drill 
+T4 P4 D10.000000 Z+0.100000 ;big tool number 
+T5 P5 Z-153.850200 ;60deg chamfer 
+T6 P6 D4.000000 Z-59.287400 ;3mm Drill 
+T7 P7 D5.000000 Z-140.503000 ;5mm dril 
+T8 P8 D8.000000 Z-236.149900 ;8mm flat 2 flute endmill 
+T70000 P0 D160.000000 Z-196.070415 ;vacuum only 

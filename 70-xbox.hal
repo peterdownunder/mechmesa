@@ -13,22 +13,30 @@ net xbox-silver-btn input.0.btn-mode
 net xbox-right-trigger input.0.abs-rz-is-pos
 net xbox-left-trigger input.0.abs-z-is-pos
 
-net xbox-left1 input.0.abs-x-is-neg or2.0.in0
-net xbox-left2 input.0.abs-hat0x-is-neg or2.0.in1
-net xbox-left <= or2.0.out
+#net xbox-left1 input.0.abs-x-is-neg or2.0.in0
+#net xbox-left2 input.0.abs-hat0x-is-neg or2.0.in1
+#net xbox-left <= or2.0.out
 
-net xbox-right1 input.0.abs-x-is-pos or2.1.in0
-net xbox-right2 input.0.abs-hat0x-is-pos or2.1.in1
-net xbox-right <= or2.1.out
+net xbox-left <= input.0.abs-hat0x-is-neg
 
-net xbox-up1 input.0.abs-y-is-neg or2.2.in0
-net xbox-up2 input.0.abs-hat0y-is-neg or2.2.in1
-net xbox-up or2.2.out
+#net xbox-right1 input.0.abs-x-is-pos or2.1.in0
+#net xbox-right2 input.0.abs-hat0x-is-pos or2.1.in1
+#net xbox-right <= or2.1.out
 
-net xbox-down1 input.0.abs-y-is-pos or2.3.in0
-net xbox-down2 input.0.abs-hat0y-is-pos or2.3.in1
-net xbox-down or2.3.out
+net xbox-right <= input.0.abs-hat0x-is-pos
 
+#net xbox-up1 input.0.abs-y-is-neg or2.2.in0
+#net xbox-up2 input.0.abs-hat0y-is-neg or2.2.in1
+#net xbox-up or2.2.out
+
+net xbox-up <= input.0.abs-hat0y-is-neg
+
+
+#net xbox-down1 input.0.abs-y-is-pos or2.3.in0
+#net xbox-down2 input.0.abs-hat0y-is-pos or2.3.in1
+#net xbox-down or2.3.out
+
+net xbox-down <= input.0.abs-hat0y-is-pos
 
 net xbox-feedplus input.0.abs-rx-is-pos and2.0.in0
 net xbox-feedpcheck input.0.btn-tr and2.0.in1

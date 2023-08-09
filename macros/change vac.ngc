@@ -30,7 +30,9 @@ O200 if [#<_hal[gmoccapy.toolmeasurement]> EQ 0]
 O200 return [3] ; indicate no tool measurement 
 O200 endif
 
-
+O250 if [#<tool> = 70000]
+o<change> endsub [1]
+O250 endif
 
 G53 G0 X[#<_ini[TOOLSENSOR]X>] Y[#<_ini[TOOLSENSOR]Y>]
 G53 G0 Z[#<_ini[TOOLSENSOR]Z>]
@@ -73,5 +75,3 @@ G43
 
 ; signal success be returning a value > 0:
 o<change> endsub [1]
-
-

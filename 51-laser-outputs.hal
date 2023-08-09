@@ -1,0 +1,16 @@
+# HAL file for setup of NEJE laser to run from M commands
+
+# neje laser https://neje.shop/
+
+
+setp hm2_7i76e.0.pwmgen.pwm_frequency 400
+setp hm2_7i76e.0.pwmgen.00.scale 24000
+setp hm2_7i76e.0.pwmgen.00.out0.invert_output True
+setp hm2_7i76e.0.pwmgen.pdm_frequency 6000000
+
+# net spindle-speed-cmd spindle.0.speed-out => hm2_7i76e.0.pwmgen.00.value
+# net spindle-on spindle.0.on => hm2_7i76e.0.pwmgen.00.enable
+
+net laser-control motion.analog-out-00 => hm2_7i76e.0.pwmgen.00.value
+
+# net laser-control hm2_7i76e.0.pwmgen.00.value => hm2_7i76e.0.7i76.0.0.output
